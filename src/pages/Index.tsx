@@ -8,12 +8,14 @@ import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
+import ImageSlider from "@/components/ImageSlider";
 
 const Index = () => (
   <>
     <Header />
     <main>
       <HeroSection />
+      <ImageSlider />
       <FeaturesSection />
       <ServicesSection />
       <B2BSection />
