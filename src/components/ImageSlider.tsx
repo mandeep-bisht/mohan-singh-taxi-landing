@@ -23,7 +23,7 @@ const ImageSlider = () => (
       <div className="max-w-4xl mx-auto px-12">
         <Carousel
           opts={{ loop: true }}
-          plugins={[Autoplay({ delay: 1500, stopOnInteraction: false })]}
+          plugins={[Autoplay({ delay: 2500, stopOnInteraction: false })]}
         >
           <CarouselContent>
             {images.map((src, i) => (
