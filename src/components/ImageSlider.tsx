@@ -15,7 +15,7 @@ import pexels11 from "@/assets/pexels-11.jpg";
 const images = [pexels1, pexels2, pexels3, pexels4, pexels5, pexels6, pexels7, pexels8, pexels9, pexels10, pexels11];
 
 const ImageSlider = () => (
-  <section className="py-16 bg-secondary">
+  <section id="gallery" className="py-16 bg-secondary scroll-mt-20">
     <div className="container">
       <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-10">
         Our <span className="text-gradient-yellow">Gallery</span>
