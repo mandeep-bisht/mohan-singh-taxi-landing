@@ -18,6 +18,11 @@ const AboutSection = () => (
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="tel:7983851263">
+              <Button size="lg" variant="outline" className="border-primary/40 hover:bg-primary hover:text-primary-foreground">
+                <Phone className="w-5 h-5 mr-2" /> 7983851263
+              </Button>
+            </a>
             <a href="tel:9639129933">
               <Button size="lg" variant="outline" className="border-primary/40 hover:bg-primary hover:text-primary-foreground">
                 <Phone className="w-5 h-5 mr-2" /> 9639129933

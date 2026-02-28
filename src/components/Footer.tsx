@@ -1,6 +1,6 @@
 import { Phone, MessageCircle, MapPin } from "lucide-react";
 
-const areas = ["Delhi", "Noida", "Gurgaon", "Agra", "Jaipur", "Lucknow", "Dehradun", "Haridwar", "Rishikesh", "Chandigarh"];
+const areas = ["All India", "Dhikuli", "Ramnagar", "Haldwani", "Nainital", "Delhi", "Noida", "Gurgaon", "Dehradun", "Haridwar", "Rishikesh"];
 
 const Footer = () => (
   <footer id="contact" className="bg-taxi-dark text-taxi-dark-foreground pt-12 pb-6">
@@ -39,6 +39,9 @@ const Footer = () => (
           <div className="space-y-3">
             <a href="tel:9639129933" className="flex items-center gap-2 text-sm text-taxi-dark-foreground/60 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" /> 9639129933
+            </a>
+            <a href="tel:7983851263" className="flex items-center gap-2 text-sm text-taxi-dark-foreground/60 hover:text-primary transition-colors">
+              <Phone className="w-4 h-4" /> 7983851263
             </a>
             <a href="https://wa.me/919639129933" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-taxi-dark-foreground/60 hover:text-green-400 transition-colors">
               <MessageCircle className="w-4 h-4" /> WhatsApp Chat

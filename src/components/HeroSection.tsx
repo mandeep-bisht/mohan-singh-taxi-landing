@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const cities = ["Delhi", "Noida", "Gurgaon", "Agra", "Jaipur", "Lucknow", "Dehradun", "Haridwar", "Rishikesh", "Chandigarh", "Mussoorie", "Nainital"];
+const cities = ["Dhikuli/Jim Corbett", "Ramnagar", "Haldwani", "Nainital", "Delhi", "Noida", "Gurgaon", "Panthnagar", "Bareilly", "Dehradun", "Haridwar", "Rishikesh", "Other"];
 
 const HeroSection = () => {
   const [pickup, setPickup] = useState("");
@@ -44,10 +44,13 @@ const HeroSection = () => {
               Safe • Reliable • Affordable Outstation & Local Taxi Service
             </p>
             <div className="mt-6 flex gap-3">
-              <a href="tel:9639129933">
-                <Button variant="outline" className="border-primary/40 text-taxi-dark-foreground hover:bg-primary hover:text-primary-foreground">
-                  Call Now
+              <a href="tel:9639129933" target="_blank" rel="noopener noreferrer">
+
+                <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                  Call Me Now
                 </Button>
+
+
               </a>
               <a href="https://wa.me/919639129933" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-green-600 hover:bg-green-700 text-taxi-dark-foreground font-semibold">
@@ -86,7 +89,7 @@ const HeroSection = () => {
                   <Select value={passengers} onValueChange={setPassengers}>
                     <SelectTrigger className="pl-10"><SelectValue placeholder="Passengers" /></SelectTrigger>
                     <SelectContent>
-                      {[1,2,3,4,5,6,7,8].map(n => <SelectItem key={n} value={String(n)}>{n} Passenger{n > 1 ? "s" : ""}</SelectItem>)}
+                      {[1, 2, 3, 4, 5, 6, 7, 8].map(n => <SelectItem key={n} value={String(n)}>{n} Passenger{n > 1 ? "s" : ""}</SelectItem>)}
                     </SelectContent>
                   </Select>
                 </div>

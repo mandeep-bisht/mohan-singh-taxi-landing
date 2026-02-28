@@ -22,9 +22,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-taxi-dark/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-taxi-dark/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="font-heading font-bold text-lg md:text-xl text-taxi-dark-foreground">
@@ -45,12 +44,12 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="tel:9639129933">
-            <Button variant="outline" size="sm" className="border-primary/30 text-taxi-dark-foreground hover:bg-primary hover:text-primary-foreground">
-              <Phone className="w-4 h-4 mr-1" /> Call Now
+            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+              Call Me
             </Button>
           </a>
           <a href="#home">
-            <Button size="sm" className="bg-yellow-gradient font-semibold text-primary-foreground shadow-lg shadow-primary/25">
+            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
               Book Now
             </Button>
           </a>
