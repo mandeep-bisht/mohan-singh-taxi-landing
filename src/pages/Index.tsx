@@ -9,6 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
 import ImageSlider from "@/components/ImageSlider";
+import ScrollShowcase from "@/components/ScrollShowcase";
 
 const Index = () => (
   <>
@@ -16,6 +17,7 @@ const Index = () => (
     <main>
       <HeroSection />
       <ImageSlider />
+      <ScrollShowcase />
       <FeaturesSection />
       <ServicesSection />
       <B2BSection />
