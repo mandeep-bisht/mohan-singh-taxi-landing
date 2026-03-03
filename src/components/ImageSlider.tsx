@@ -12,7 +12,19 @@ import pexels9 from "@/assets/pexels-9.jpg";
 import pexels10 from "@/assets/pexels-10.jpg";
 import pexels11 from "@/assets/pexels-11.jpg";
 
-const images = [pexels1, pexels2, pexels3, pexels4, pexels5, pexels6, pexels7, pexels8, pexels9, pexels10, pexels11];
+const images = [
+  { src: pexels1, alt: "MSB Taxi sedan on Nainital hill road" },
+  { src: pexels2, alt: "Comfortable SUV for Jim Corbett safari transfer" },
+  { src: pexels3, alt: "Airport taxi pickup for Nainital trip" },
+  { src: pexels4, alt: "Outstation taxi on Delhi to Nainital highway" },
+  { src: pexels5, alt: "Clean sanitized cab interior for safe travel" },
+  { src: pexels6, alt: "Tempo Traveller for group trip to Uttarakhand" },
+  { src: pexels7, alt: "Taxi near Naini Lake Nainital" },
+  { src: pexels8, alt: "Ramnagar taxi service near Jim Corbett gate" },
+  { src: pexels9, alt: "Professional driver for corporate taxi service" },
+  { src: pexels10, alt: "Scenic road trip taxi in Uttarakhand hills" },
+  { src: pexels11, alt: "Reliable cab service for Nainital sightseeing" },
+];
 
 const ImageSlider = () => (
   <section id="gallery" className="py-16 bg-secondary scroll-mt-20">
@@ -26,13 +38,14 @@ const ImageSlider = () => (
           plugins={[Autoplay({ delay: 2500, stopOnInteraction: false })]}
         >
           <CarouselContent>
-            {images.map((src, i) => (
+            {images.map((img, i) => (
               <CarouselItem key={i}>
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src={src}
-                    alt={`Gallery image ${i + 1}`}
+                    src={img.src}
+                    alt={img.alt}
                     className="w-full h-[300px] md:h-[450px] object-cover"
+                    loading="lazy"
                   />
                 </div>
               </CarouselItem>
