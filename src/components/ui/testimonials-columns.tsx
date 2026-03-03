@@ -39,19 +39,9 @@ export const TestimonialsColumn = ({
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   "{text}"
                 </p>
-                <div className="flex items-center gap-3 mt-4">
-                  <img
-                    src={image}
-                    alt={name}
-                    className="h-10 w-10 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="font-heading text-sm font-semibold text-card-foreground">
-                      {name}
-                    </p>
-                    <p className="text-xs text-muted-foreground">{role}</p>
-                  </div>
-                </div>
+                <p className="font-heading text-sm font-semibold text-card-foreground mt-4">
+                  — {name}
+                </p>
               </div>
             ))}
           </React.Fragment>
