@@ -10,6 +10,10 @@ import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
 import ImageSlider from "@/components/ImageSlider";
 import ScrollShowcase from "@/components/ScrollShowcase";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import LocalSEOSection from "@/components/LocalSEOSection";
+import FAQSection from "@/components/FAQSection";
+import FloatingCTA from "@/components/FloatingCTA";
 
 const Index = () => (
   <>
@@ -19,14 +23,18 @@ const Index = () => (
       <ImageSlider />
       <ScrollShowcase />
       <FeaturesSection />
+      <WhyChooseSection />
       <ServicesSection />
+      <LocalSEOSection />
       <B2BSection />
       <FleetSection />
       <AboutSection />
       <TestimonialsSection />
+      <FAQSection />
       <CTABanner />
     </main>
     <Footer />
+    <FloatingCTA />
   </>
 );
 
